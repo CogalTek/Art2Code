@@ -1,5 +1,11 @@
 <template>
     <div class="body d-flex flex-column align-items-center justify-content-center">
+        <div v-if="responseCode === 200" class="alert alert-success fixed-top text-center" role="alert">
+            Vous vous êtes bien enregistré !
+        </div>
+        <div v-else-if="responseCode === 400" class="alert alert-danger fixed-top text-center" role="alert">
+            Une erreur est survenue, veuillez réessayer.
+        </div>
         <input v-model="nom" class="buttonclass" type="text" placeholder="Nom">
         <input v-model="prenom" class="buttonclass" type="text" placeholder="Prenom">
         <input v-model="email" class="buttonclass" type="email" placeholder="Adresse Mail">
@@ -27,6 +33,7 @@
     let tel = ref('')
     let years = ref(0)
     let ecole = ref('')
+    let responseCode = ref(null)
 
     const requestInscription = async () => {
         const data = {
@@ -37,12 +44,17 @@
             "telephone": tel.value,
             "ecole": ecole.value
         };
-        let record = await pb.collection('inscrit').create(data);
-        console.log(record);
+        try {
+            let record = await pb.collection('inscrit').create(data);
+            console.log(record);
+            responseCode.value = 200;
+        } catch (e) {
+            console.error(e);
+            responseCode.value = 400;
+            console.log("400");
+        }
     };
-
 </script>
-
   
   <style>
       .buttonclass {
