@@ -7,7 +7,8 @@ docker-compose build
 # Lancer les conteneurs
 docker-compose up -d
 
-curl http://localhost:3000/
+# Ajouter des tests
+# curl http://localhost:3000/
 
 # Arrêter les conteneurs
 docker-compose down
