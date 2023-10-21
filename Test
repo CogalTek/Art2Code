@@ -1,13 +1,5 @@
 #!/bin/bash
 set -e # Arrêter le script en cas d'erreur
 
-docker-compose down
-
-# Construire les images Docker
-docker-compose build
-
-# Lancer les conteneurs
-docker-compose up -d
-
 # Ajouter des tests
-# curl http://localhost:3000/
+curl http://localhost:4000/
