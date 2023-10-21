@@ -4,10 +4,8 @@ pipeline {
         stage("Build") {
             steps {
                 echo "Building the app..."
-                sh 'chmod u+x deploy smoke-tests'
-                sh './deploy staging'
-                sh './smoke-tests'
-                ./Test
+                sh 'chmod u+x Test'
+                sh './Test'
             }
         }
         stage("Test") {
