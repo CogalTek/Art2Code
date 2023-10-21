@@ -4,8 +4,7 @@ pipeline {
         stage("Build") {
             steps {
                 echo "Building the app..."
-                sh 'chmod u+x Test'
-                sh './Test'
+                sh 'chmod +x Test'
             }
         }
         stage("Test") {
