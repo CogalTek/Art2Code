@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e # Arrêter le script en cas d'erreur
 
+docker compose down
+
 # Construire les images Docker
 docker-compose build
 
@@ -9,6 +11,3 @@ docker-compose up -d
 
 # Ajouter des tests
 # curl http://localhost:3000/
-
-# Arrêter les conteneurs
-docker-compose down
