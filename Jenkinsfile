@@ -4,7 +4,8 @@ pipeline {
         stage("Build") {
             steps {
                 echo "Building the app..."
-                sh "docker-compose -f docker-compose-dev.yml -d"
+                sh "docker-compose -f docker-compose-dev.yml build"
+                sh "docker-compose -f docker-compose-dev.yml up -d"
             }
         }
         stage("Test") {
