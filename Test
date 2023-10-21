@@ -3,6 +3,10 @@
 # Effectuer une requête CURL vers l'application
 response=$(curl --write-out '%{http_code}' --silent --output /dev/null http://localhost:4000)
 
+if [ $response -eq 000 ]; then
+  sleep(10)
+  response=$(curl --write-out '%{http_code}' --silent --output /dev/null http://localhost:4000)
+fi
 # Vérifier si le code de statut HTTP est 200 (OK)
 if [ $response -eq 200 ]; then
   echo "Test réussi, le service répond avec le code HTTP 200."
