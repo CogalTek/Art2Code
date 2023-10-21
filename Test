@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e # Arrêter le script en cas d'erreur
 
-docker compose down
+docker-compose down
 
 # Construire les images Docker
 docker-compose build
