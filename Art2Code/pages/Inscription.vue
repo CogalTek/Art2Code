@@ -33,6 +33,7 @@
     let tel = ref('')
     let years = ref(0)
     let ecole = ref('')
+    let skill = ref('')
     let responseCode = ref(null)
 
     const requestInscription = async () => {
@@ -42,7 +43,8 @@
             "email": email.value,
             "annee": years.value,
             "telephone": tel.value,
-            "ecole": ecole.value
+            "ecole": ecole.value,
+            "skill": skill.value
         };
         try {
             let record = await pb.collection('inscrit').create(data);
