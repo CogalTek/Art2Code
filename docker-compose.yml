@@ -17,9 +17,12 @@ services:
     ports:
       - "8090:8090"
     volumes:
-      - ${PWD}/pocketbase/pb_data
+      - pocketbase-volume:/pb_data
     healthcheck: #optional (recommended) since v0.10.0
       test: wget --no-verbose --tries=1 --spider http://localhost:8090/api/health || exit 1
       interval: 5s
       timeout: 5s
       retries: 5
+volumes:
+  pocketbase-volume:
+    name: pocketbase-volume
