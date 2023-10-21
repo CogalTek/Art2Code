@@ -12,6 +12,7 @@ pipeline {
             steps {
                 echo "Testing the app..."
                 sh 'chmod +x Test'
+                sh "./Test"
                 sh "docker-compose -f docker-compose-dev.yml down"
             }
         }
