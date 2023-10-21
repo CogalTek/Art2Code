@@ -1,5 +1,13 @@
 #!/bin/bash
-set -e # Arrêter le script en cas d'erreur
 
-# Ajouter des tests
-curl http://localhost:4000/
+# Effectuer une requête CURL vers l'application
+response=$(curl --write-out '%{http_code}' --silent --output /dev/null http://localhost:4000)
+
+# Vérifier si le code de statut HTTP est 200 (OK)
+if [ $response -eq 200 ]; then
+  echo "Test réussi, le service répond avec le code HTTP 200."
+  exit 0  # Sortir avec le code 0 pour indiquer que le test a réussi
+else
+  echo "Test échoué, le service répond avec le code HTTP $response."
+  exit 1  # Sortir avec le code 1 pour indiquer que le test a échoué
+fi
