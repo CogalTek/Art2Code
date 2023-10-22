@@ -17,7 +17,7 @@
             <option value="Epitech">Epitech</option>
             <option value="Etpa">Etpa</option>
         </select>
-        <input class="buttonclass" type="text" placeholder="Que savez-vous faire ?">
+        <input v-model="skill" class="buttonclass" type="text" placeholder="Que savez-vous faire ?">
         <h3 class="text01">Un mail sera envoyé<br>avec les informations<br>relative à la Jam.</h3>
         <input @click="requestInscription" class="my-5 btn btn-primary" type="button" value="S'inscrire">
     </div>
