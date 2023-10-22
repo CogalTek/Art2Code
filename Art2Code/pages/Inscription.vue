@@ -10,7 +10,8 @@
         <input v-model="prenom" class="buttonclass" type="text" placeholder="Prenom">
         <input v-model="email" class="buttonclass" type="email" placeholder="Adresse Mail">
         <input v-model="tel" class="buttonclass" type="tel" placeholder="N° de Telephone">
-        <input v-model="years" class="buttonclass" type="number" placeholder="Année (Dans votre école)">
+        <input v-model="years" class="buttonclass" type="number" placeholder="Année (Dans votre école)" @focus="showPlaceholder = true" @blur="showPlaceholder = false">
+        <span v-if="showPlaceholder">Année (Dans votre école)</span>
         <select v-model="ecole">
             <option value="" disabled selected>Ecole :</option>
             <option value="Epitech">Epitech</option>
@@ -23,7 +24,7 @@
 </template>
 
 <script setup>
-    import { ref } from 'vue'
+    import { ref, onMounted } from 'vue'
     import PocketBase from 'pocketbase'
     const pb = new PocketBase('http://mathieu-rio.fr:8090');
 
@@ -35,6 +36,7 @@
     let ecole = ref('')
     let skill = ref('')
     let responseCode = ref(null)
+    let showPlaceholder = ref(false);
 
     const requestInscription = async () => {
         const data = {
@@ -59,14 +61,19 @@
 </script>
   
   <style>
-      .buttonclass {
+    span {
+        position: absolute;
+        left: 320px;
+        top: 10px;
+    }
+    .buttonclass {
         margin: 1%;
         border-radius: 10px;
         height: 50px;
         width: 300px;
         text-align: center;
-      }
-      .text01 {
+    }
+    .text01 {
         margin: 1%;
         color: #E2BF40;
         font-family: 'IBM Plex Mono', monospace;
@@ -75,11 +82,11 @@
         font-weight: 700;
         line-height: normal;
         text-align: center;
-      }
-      .body {
+    }
+    .body {
         height: 100vh;
         width: 100vw;
         position: fixed;
         background: linear-gradient(180deg, #070B2C 0%, rgba(3, 6, 29, 0.727) 100%);
-      }
+    }
   </style>

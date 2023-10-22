@@ -10,7 +10,7 @@
             <h5 class="card-header">Gains</h5>
             <div class="card-body">
                 <h5 class="card-title">Credits Epitech</h5>
-                <p class="card-text">La Jam permet de toucher 10 xp sois 1 credit pour 3 jours de travail</p>
+                <p class="card-text">La Jam permet de toucher 10 xp soit 1 credit pour 3 jours de travail</p>
                 <h5 class="card-title">Credits Etpa</h5>
                 <p class="card-text">Pas d'information pour le moment</p>
                 <h5 class="card-title">Pour les gagnants</h5>
@@ -23,29 +23,29 @@
             <div class="card-body">
                 <h5 class="card-title">Vendredi</h5>
                 <h6 class="card-subtitle mb-2 text-body-secondary">17h00</h6>
-                <p class="card-text">Kick-off + Revelation du theme</p>
+                <p class="card-text">Kick-off + Révélation du theme</p>
                 <h6 class="card-subtitle mb-2 text-body-secondary">17h30</h6>
-                <p class="card-text">Ideation</p>
+                <p class="card-text">Idéation</p>
                 <h6 class="card-subtitle mb-2 text-body-secondary">18h00</h6>
-                <p class="card-text">Presentation des projets et creation des groupes</p>
+                <p class="card-text">Présentation des projets et création des groupes</p>
                 <h5 class="card-title">Samedi</h5>
-                <p class="card-text">Rien de prévus pour l'instant</p>
+                <p class="card-text">Rien de prévu pour l'instant</p>
                 <h5 class="card-title">Dimanche</h5>
                 <h6 class="card-subtitle mb-2 text-body-secondary">15h00</h6>
-                <p class="card-text">Presentations des Projets</p>
+                <p class="card-text">Présentation des projets</p>
                 <h6 class="card-subtitle mb-2 text-body-secondary">16h30</h6>
-                <p class="card-text">Presentations des gagnants</p>
+                <p class="card-text">Présentation des gagnants</p>
             </div>
         </div>
 
         <div class="card border-light my-5">
             <h5 class="card-header">Réglements</h5>
             <div class="card-body">
-                <h5 class="card-title">Nourritures - Boissons - Locaux</h5>
+                <h5 class="card-title">Nourriture - Boisson - Locaux</h5>
                 <p class="card-text">- Vous ne pouvez pas boire d'alcool dans l'enceinte des locaux d'Epitech Rennes (tout type d'alcool).</p>
-                <p class="card-text">- Vous ne pouvez pas manger dans les salles machines (toutes salles ou il y a plus de 3 pc), il y a une cafetaria mise a disposition.</p>
-                <p class="card-text">- Ne pas remplire les poubelles de cartons a pizza, vous pouvez les mettre dans les poubelles jaune devant le batiment.</p>
-                <p class="card-text">- Vous pouvez dormir dans les locaux à conditions de laisser propre derrieres vous.</p>
+                <p class="card-text">- Vous ne pouvez pas manger dans les salles machines (toute salle ou il y a plus de 3 pc), il y a une cafetaria mise a disposition.</p>
+                <p class="card-text">- Ne pas remplir les poubelles de cartons a pizza, vous pouvez les mettre dans les poubelles jaune devant le bâtiment.</p>
+                <p class="card-text">- Vous pouvez dormir dans les locaux à condition de laisser propre derrières vous.</p>
             </div>
         </div>
     </div>
