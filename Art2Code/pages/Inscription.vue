@@ -11,7 +11,7 @@
         <input v-model="email" class="buttonclass" type="email" placeholder="Adresse Mail">
         <input v-model="tel" class="buttonclass" type="tel" placeholder="N° de Telephone">
         <input v-model="years" class="buttonclass" type="number" placeholder="Année (Dans votre école)" @focus="showPlaceholder = true" @blur="showPlaceholder = false">
-        <span v-if="showPlaceholder">Année (Dans votre école)</span>
+        <span v-if="showPlaceholder" style="color:white">Année (Dans votre école)</span>
         <select v-model="ecole">
             <option value="" disabled selected>Ecole :</option>
             <option value="Epitech">Epitech</option>
@@ -62,9 +62,7 @@
   
   <style>
     span {
-        position: absolute;
-        left: 320px;
-        top: 10px;
+        color: white;
     }
     .buttonclass {
         margin: 1%;
