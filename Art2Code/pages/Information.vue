@@ -10,7 +10,7 @@
             <h5 class="card-header">Gains</h5>
             <div class="card-body">
                 <h5 class="card-title">Credits Epitech</h5>
-                <p class="card-text">La Jam permet de toucher 10 xp soit 1 credit pour 3 jours de travail</p>
+                <p class="card-text">La Jam permet de toucher 6 xp pour 3 jours de travail</p>
                 <h5 class="card-title">Credits Etpa</h5>
                 <p class="card-text">Pas d'information pour le moment</p>
                 <h5 class="card-title">Pour les gagnants</h5>
@@ -48,6 +48,17 @@
                 <p class="card-text">- Vous pouvez dormir dans les locaux à condition de laisser propre derrières vous.</p>
             </div>
         </div>
+
+        <div class="card border-light my-5">
+            <h5 class="card-header">Information Utile</h5>
+            <div class="card-body">
+                <h5 class="card-title">Mise à jours</h5>
+                <p class="card-text">Nous vous invitons à venir consulter de temps en temps ce site, certaines infos seront mis à jour, et nous <br>vous enverrons dans tous les cas des mails d'information avant la Jam.</p>
+                <h5 class="card-title">Nourriture</h5>
+                <p class="card-text">Pour l'instant aucun repas n'es prévus, mais nous sommes en train d'essayer de chercher un financement.</p>
+            </div>
+        </div>
+
     </div>
   </template>
   
