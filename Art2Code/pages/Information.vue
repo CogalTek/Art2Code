@@ -28,13 +28,18 @@
                 <p class="card-text">Idéation</p>
                 <h6 class="card-subtitle mb-2 text-body-secondary">18h00</h6>
                 <p class="card-text">Présentation des projets et création des groupes</p>
+                <h6 class="card-subtitle mb-2 text-body-secondary">18h30</h6>
+                <p class="card-text">Apéro</p>
                 <h5 class="card-title">Samedi</h5>
-                <p class="card-text">Rien de prévu pour l'instant</p>
+                <h6 class="card-subtitle mb-2 text-body-secondary">9h30 - 11h00</h6>
+                <p class="card-text">Petit-déjeuner</p>
                 <h5 class="card-title">Dimanche</h5>
                 <h6 class="card-subtitle mb-2 text-body-secondary">15h00</h6>
                 <p class="card-text">Présentation des projets</p>
                 <h6 class="card-subtitle mb-2 text-body-secondary">16h30</h6>
                 <p class="card-text">Présentation des gagnants</p>
+                <h6 class="card-subtitle mb-2 text-body-secondary">17h00</h6>
+                <p class="card-text">Goûter</p>
             </div>
         </div>
 
